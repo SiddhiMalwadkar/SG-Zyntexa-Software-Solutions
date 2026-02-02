@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MBA-Distance |SG Zyntexa Software Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="MBAdist.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <img src="Files/assets/logo/SG-Zyntexa-F-Logo.png" alt="SG Zyntexa Losgo" class="navbar-logo">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <!-- About Us Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="aboutus.html" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutus.html">Our Story</a></li>
+          </ul>
+        </li>
+
+        <!-- Product Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="campus.html">SG Zyntexa Campus</a></li>
+            <li><a class="dropdown-item" href="offerings.html">Offerings</a></li>
+            <li><a class="dropdown-item" href="architectures.html">Architecture</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partner Institutions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn demo-btn" href="request.html">Request a Demo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+<header class="science-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left Text -->
+      <div class="col-lg-6">
+        <div class="badge-pill">
+          <i class="bi bi-mortarboard-fill"></i>
+          Distance Education • MBA
+        </div>
+
+        <h1 class="hero-title">
+          Distance MBA Program Operations, Managed End-to-End
+        </h1>
+
+        <p class="hero-subtitle">
+          SG Zyntexa Software Solutions helps institutions manage distance MBA cohorts, session scheduling, assignments,
+          evaluation tracking, mentor communication, and completion reporting—on one centralized platform.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#modules" class="btn hero-btn-primary">
+            Explore Modules <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <a href="#highlights" class="btn hero-btn-outline">
+            View Highlights
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="hero-highlight">
+            <i class="bi bi-calendar-week"></i>
+            Online session scheduling
+          </div>
+          <div class="hero-highlight">
+            <i class="bi bi-file-earmark-text"></i>
+            Assignments & submissions
+          </div>
+          <div class="hero-highlight">
+            <i class="bi bi-patch-check"></i>
+            Completion tracking
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center">
+        <div class="hero-img-wrap reveal">
+          <img src="Files/assets/domains/Distance/MBA/logo.png"
+               class="img-fluid hero-img"
+               alt="Distance Education MBA Program">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ================= SECTION: CHALLENGES / NEEDS ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-start g-4">
+
+      <div class="col-lg-5">
+        <h2 class="section-title">What Distance MBA Institutes Usually Struggle With</h2>
+        <p class="section-subtitle">
+          Distance MBA programs require strong coordination for online schedules, submissions, evaluation workflows,
+          learner engagement, and reporting. SG Zyntexa Software Solutions centralizes operations for smooth distance education delivery.
+        </p>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="needs-grid">
+
+          <div class="need-card reveal">
+            <i class="bi bi-calendar2-x"></i>
+            <div>
+              <h6>Batch scheduling becomes inconsistent</h6>
+              <p>Online sessions across multiple cohorts need structure.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-folder2-open"></i>
+            <div>
+              <h6>Submissions are scattered</h6>
+              <p>Assignments, projects and case studies need one place.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-chat-square-text"></i>
+            <div>
+              <h6>Mentor communication lacks tracking</h6>
+              <p>Follow-ups and feedback cycles need documentation.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-shield-lock"></i>
+            <div>
+              <h6>Completion reporting becomes heavy</h6>
+              <p>Final records and certificates need structured workflow.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION: MODULES ================= -->
+<section id="modules" class="section-pad section-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Smart Modules Built for Distance MBA Programs</h2>
+      <p class="section-subtitle center-subtitle">
+        Built for remote learning, structured evaluation and completion-ready reporting.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-person-vcard"></i></div>
+          <h6>Learner Profile Management</h6>
+          <p>Manage learner data, enrollment, and documentation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-calendar-week"></i></div>
+          <h6>Online Scheduling</h6>
+          <p>Plan sessions, mentors, batches and timetable visibility.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-journal-check"></i></div>
+          <h6>Attendance & Participation</h6>
+          <p>Track participation for webinars and online sessions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <h6>Assignments & Submissions</h6>
+          <p>Collect assignments, projects and case study work.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-clipboard2-check"></i></div>
+          <h6>Evaluation & Feedback</h6>
+          <p>Grade work with structured rubrics and remarks history.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-patch-check"></i></div>
+          <h6>Completion Tracking</h6>
+          <p>Track module completion and certification readiness.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= HIGHLIGHTS ================= -->
+<section id="highlights" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <h2 class="section-title">Distance MBA, With Structured Accountability</h2>
+        <p class="section-subtitle">
+          Distance MBA programs succeed when schedules, submissions, feedback and evaluations stay structured.
+          SG Zyntexa Software Solutions helps institutes maintain learner progress and ensure completion-ready workflows.
+        </p>
+
+        <div class="report-grid">
+          <div class="report-pill reveal"><i class="bi bi-check2-circle"></i> Track sessions, attendance and participation logs</div>
+          <div class="report-pill reveal"><i class="bi bi-file-earmark-text"></i> Centralized submission records for assignments/projects</div>
+          <div class="report-pill reveal"><i class="bi bi-clipboard-check"></i> Evaluation & feedback cycles with transparency</div>
+          <div class="report-pill reveal"><i class="bi bi-bar-chart"></i> Completion-ready reporting for distance programs</div>
+        </div>
+
+        <div class="highlight-box reveal">
+          <i class="bi bi-info-circle me-2"></i>
+          Always completion-ready. Always structured.
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center reveal">
+        <img src="Files/assets/domains/Distance/MBA/modules.png"
+             class="img-fluid soft-img"
+             alt="Distance MBA highlights">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="section-pad section-soft" id="dmbaStats">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Operational Impact for Distance MBA Delivery</h2>
+      <p class="section-subtitle center-subtitle">
+        Quantified visibility for scheduling, reporting and evaluation workflows.
+      </p>
+    </div>
+
+    <div class="row g-4 text-center">
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Centralized Delivery</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="45" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Reduced Manual Follow-ups</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="35" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Faster Evaluations</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-card reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="24" data-suffix=" Hours">0</span>
+          </h2>
+          <p class="mb-0">Reporting Readiness</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta cta-gap-footer">
+  <div class="container text-center">
+    <h2>Ready to streamline Distance MBA program operations?</h2>
+    <p>See how SG Zyntexa Software Solutions manages online sessions, submissions, evaluations and completion workflows—end-to-end.</p>
+
+    <div class="cta-actions">
+      <a href="request.html" class="btn hero-btn-primary">Request a Demo</a>
+      <a href="campus.html" class="btn hero-btn-outline">View Other Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="sg-footer pt-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Brand Section -->
+      <div class="col-lg-4">
+        <h3 class="sg-footer-brand fw-bold mb-3">  SG Zyntexa Software Solutions
+        </h3>
+
+        <p class="sg-footer-text mb-3">
+          SG Zyntexa Business Solutions empowers businesses worldwide with innovative consulting, technology, and outsourcing services that drive digital transformation. We help clients accelerate growth, optimize costs, and achieve operational excellence through agile execution and strategic innovation.
+        </p>
+
+        <a href="mailto:contact@sgsoftware.com" class="sg-footer-email">
+          <i class="bi bi-envelope-fill me-2"></i> contact@sgsoftware.com
+        </a>
+      </div>
+
+      <!-- Company Links -->
+      <div class="col-lg-2 col-md-4">
+        <h6 class="sg-footer-title mb-3">Company</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="aboutus.html" class="sg-footer-link">
+              <i class="bi bi-info-circle-fill me-2"></i> About Us
+            </a>
+          </li>
+          <li>
+            <a href="campus.html" class="sg-footer-link">
+              <i class="bi bi-gear-fill me-2"></i> Services
+            </a>
+          </li>
+          <li>
+            <a href="partners.html" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i> Partners
+            </a>
+          </li>
+          <li>
+             <a href="#" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i>hr@sgzyntexa.com
+            </a>
+        </a>
+            </a>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Resources</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="blog.html" class="sg-footer-link">
+              <i class="bi bi-journal-text me-2"></i> Blog
+            </a>
+          </li>
+          <li>
+            <a href="support.html" class="sg-footer-link">
+              <i class="bi bi-headset me-2"></i> Support
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" class="sg-footer-link">
+              <i class="bi bi-shield-lock-fill me-2"></i> Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" class="sg-footer-link">
+              <i class="bi bi-file-earmark-text-fill me-2"></i> Terms & Conditions
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch -->
+      <!-- Get in Touch + MAP -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Get in Touch</h6>
+
+        <p class="sg-footer-text mb-2">
+          <i class="bi bi-geo-alt-fill me-2"></i> Pune & Solapur, India
+        </p>
+
+        <!-- MAP -->
+        <div id="footer-map" style="height:220px; border-radius:10px;"></div>
+
+        <div class="d-flex gap-2 sg-footer-socials mt-3">
+          <a href="https://www.instagram.com/sgzyntexa.pvt.ltd?igsh=b2prcWN2ZmkwOGkz" class="sg-social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/yourprofile" class="sg-social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/company/sg-zyntexa-com/" class="sg-social-btn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="sg-footer-divider my-4">
+
+    <!-- Bottom -->
+    <div class="sg-footer-bottom text-center pb-4">
+      <p class="mb-0 small">
+        <i class="bi bi-c-circle me-1"></i> 2025 SG Zyntexa Software Solutions Pvt. Ltd. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  const pune = [18.5204, 73.8567];
+  const solapur = [17.6599, 75.9064];
+
+  const map = L.map('footer-map', {
+    scrollWheelZoom: false,
+    dragging: true
+  });
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker(pune).addTo(map).bindPopup("Pune Office");
+  L.marker(solapur).addTo(map).bindPopup("Solapur Office");
+
+  const bounds = L.latLngBounds([pune, solapur]);
+  map.fitBounds(bounds, { padding: [25, 25] });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="MBAdist.js"></script>
+</body>
+</html>

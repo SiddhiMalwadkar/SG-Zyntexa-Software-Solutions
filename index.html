@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SG Zyntexa Software Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SPINNER ================= -->
+<div id="page-loader">
+  <div class="startup-spinner"></div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <img src="Files/assets/logo/SG-Zyntexa-F-Logo.png" alt="SG Zyntexa Losgo" class="navbar-logo">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <!-- About Us Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="aboutus.html" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutus.html">Our Story</a></li>
+          </ul>
+        </li>
+
+        <!-- Product Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="campus.html">SG Zyntexa Campus</a></li>
+            <li><a class="dropdown-item" href="offerings.html">Offerings</a></li>
+            <li><a class="dropdown-item" href="architectures.html">Architecture</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partner Institutions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn demo-btn" href="request.html">Request a Demo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 reveal-left">
+        <h1 class="hero-title">
+          Empowering <span id="typing-text"></span><span class="cursor">|</span>
+        </h1>
+
+        <p class="hero-subtext">
+          Delivering secure, scalable and intelligent automation solutions
+          for modern educational institutions.
+        </p>
+
+        <a href="request.html" class="btn hero-btn">Request a Demo</a>
+      </div>
+
+      <!-- RIGHT CONTENT (LOTTIE) -->
+      <div class="col-lg-6 reveal-right delay-200">
+        <div class="hero-lottie-wrapper">
+
+          <div class="hero-lottie active">
+            <lottie-player
+              src="Files/assets/hero/Software Testing.json"
+              background="transparent"
+              loop
+              autoplay>
+            </lottie-player>
+          </div>
+
+          <div class="hero-lottie">
+            <lottie-player
+              src="Files/assets/hero/Isometric data analysis.json"
+              background="transparent"
+              loop
+              autoplay>
+            </lottie-player>
+          </div>
+
+          <div class="hero-lottie">
+            <lottie-player
+              src="Files/assets/hero/Digital Marketing (1).json"
+              background="transparent"
+              loop
+              autoplay>
+            </lottie-player>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features-section">
+  <div class="container">
+    <div class="features-row">
+      <div class="feature-card reveal-up delay-100">
+        <div class="feature-icon academic">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <h5>The Academic Backbone</h5>
+        <p>
+          Crafted by seasoned academicians and education leaders with over a
+          century of combined experience, SG Zyntexa Software Solutions delivers a strong,
+          future-ready academic foundation built on deep domain insight.
+        </p>
+      </div>
+
+
+      <div class="feature-card reveal-up delay-200">
+        <div class="feature-icon automation">
+          <i class="bi bi-diagram-3-fill"></i>
+        </div>
+        <h5>Centralized Automation Framework</h5>
+        <p>
+          One platform. One database. Complete automation. Our unified system
+          removes fragmentation, streamlines workflows, and supports scalable
+          institutional growth.
+        </p>
+      </div>
+
+
+      <div class="feature-card reveal-up delay-300">
+        <div class="feature-icon configurable">
+          <i class="bi bi-sliders2-vertical"></i>
+        </div>
+        <h5>Rapid Deployment Architecture</h5>
+        <p>
+          Go live in 1–2 months with a configurable architecture designed for
+          speed, efficiency, and measurable ROI—without post-implementation
+          overheads.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPECIALITY ================= -->
+<section class="sg-speciality">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+  
+      <div class="col-lg-6 text-center reveal-left">
+        <lottie-player
+          src="Files/assets/Marketing  Analytics.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          class="sg-lottie">
+        </lottie-player>
+      </div>
+
+  
+<div class="col-lg-6 reveal-right delay-200">
+  <h2 class="sg-title reveal-up">SG Zyntexa Software Solutions <br> Speciality</h2>
+
+  <p class="sg-tagline reveal-up delay-100">
+    Moving beyond fragmented systems.
+  </p>
+
+  <p class="sg-text reveal-up delay-200">
+    At SG Zyntexa Software Solutions, we help institutions transition from disconnected,
+    piecemeal tools to a unified, future-ready digital ecosystem.
+    Instead of managing multiple legacy systems with limited flexibility,
+    our platform enables a seamless, end-to-end digitization journey that
+    reshapes how your organization operates.
+  </p>
+
+  <p class="sg-text reveal-up delay-300">
+    Built on highly configurable frameworks, SG Zyntexa Software Solutions is designed to
+    grow and adapt alongside your institution. Whether you are evolving
+    processes, scaling operations, or responding to industry change,
+    our solution delivers flexibility without complexity.
+  </p>
+
+  <p class="sg-text reveal-up delay-400">
+    By placing control directly in the hands of business owners and
+    decision-makers, we empower institutions to innovate with confidence,
+    streamline operations efficiently, and achieve long-term,
+    sustainable success.
+  </p>
+
+  <p class="sg-text reveal-up delay-400">
+    With SG Zyntexa Software Solutions, digitization goes beyond technology — it becomes a
+    strategic advantage that equips you with the agility, clarity, and
+    control needed to lead in a dynamic educational environment.
+  </p>
+
+  <a href="request.html" class="btn sg-btn reveal-up delay-300">
+    Request a demo →
+  </a>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="key-highlights-section reveal-up">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+
+      <div class="col-lg-4 text-center text-lg-start reveal-left">
+        <h2 class="section-title reveal-up">Key Highlights</h2>
+
+        <div class="highlights-lottie-card reveal-zoom delay-200">
+          <lottie-player
+            src="Files/assets/Sales Presentation Showcasing Analytics Animation.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="highlights-lottie">
+          </lottie-player>
+        </div>
+      </div>
+
+
+      <div class="col-lg-8 reveal-right delay-200">
+        <div class="row g-4">
+
+
+          <div class="col-md-4 reveal-up delay-100">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-sliders"></i></div>
+              <h6>Adaptive Power</h6>
+              <p>Effortlessly align institutional rulebooks without complex customization.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-200">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-diagram-3"></i></div>
+              <h6>Unified Enterprise Solution</h6>
+              <p>Complete automation through one application and one database.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-300">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-database"></i></div>
+              <h6>Smart Data Core</h6>
+              <p>Advanced reporting, analytics, BI, and AI-driven insights.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-100">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-boxes"></i></div>
+              <h6>Flexible Frameworks</h6>
+              <p>Quickly pivot to evolving requirements with agile frameworks.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-200">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-bezier2"></i></div>
+              <h6>Effortless Data Pipelines</h6>
+              <p>Intelligent pipelines supporting vast, complex data flows.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-300">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-mortarboard"></i></div>
+              <h6>Academic Expertise</h6>
+              <p>Developed by academicians with 100+ years of combined experience.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-100">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-layers"></i></div>
+              <h6>Integrated Ecosystem</h6>
+              <p>Unified modules and real-time data for actionable insights.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-200">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-globe2"></i></div>
+              <h6>Comprehensive Digitization</h6>
+              <p>Academic, LMS, admin, collaboration, and compliance.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-300">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-rocket-takeoff"></i></div>
+              <h6>Rapid Deployment</h6>
+              <p>Go live in under 3 months and achieve fast ROI.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-100">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-award"></i></div>
+              <h6>Proven Best Practices</h6>
+              <p>Insights drawn from 200+ institutes worldwide.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-200">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-eye"></i></div>
+              <h6>Transformative Visibility</h6>
+              <p>Designed for multi-domain, multi-level education systems.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up delay-300">
+            <div class="kh-card">
+              <div class="kh-icon"><i class="bi bi-shield-check"></i></div>
+              <h6>Regulatory Compliance Ready</h6>
+              <p>Ready-to-use analytics aligned with regulatory standards.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="partners-section reveal-up">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <div class="col-lg-4 px-5 partners-text reveal-left">
+        <h2 class="reveal-up">CHANGEMAKING<br>PARTNERSHIPS</h2>
+
+        <p class="description reveal-up delay-200">
+          Record-changing results.<br>
+          Together with <strong>SG Zyntexa Software Solutions</strong>, transformation isn’t just
+          possible—it’s inevitable.
+        </p>
+      </div>
+
+
+      <div class="col-lg-8 partners-logos-wrapper reveal-right delay-200">
+        <div class="partners-bg">
+          <div class="logos-grid">
+
+            <div class="logo-card reveal-zoom delay-100"><img src="Files/assets/digit.jpg" alt=""></div>
+            <div class="logo-card reveal-zoom delay-200"><img src="Files/assets/azure.jpg" alt=""></div>
+            <div class="logo-card reveal-zoom delay-300"><img src="Files/assets/paytm.png" alt=""></div>
+
+            <div class="logo-card reveal-zoom delay-100"><img src="Files/assets/googlecloud.png" alt=""></div>
+            <div class="logo-card reveal-zoom delay-200"><img src="Files/assets/hp.png" alt=""></div>
+            <div class="logo-card reveal-zoom delay-300"><img src="Files/assets/Razorpay.jpg" alt=""></div>
+
+            <div class="logo-card reveal-zoom delay-100"><img src="Files/assets/aadhar.webp" alt=""></div>
+            <div class="logo-card reveal-zoom delay-200"><img src="Files/assets/minfy.gif" alt=""></div>
+            <div class="logo-card reveal-zoom delay-300"><img src="Files/assets/edcil.png" alt=""></div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="unique-section py-5 reveal-up">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+
+
+      <div class="col-lg-7 reveal-left">
+        <h2 class="section-heading mb-3 reveal-up">UNIQUE CHARACTERISTICS</h2>
+        <p class="section-subtitle mb-4 reveal-up delay-100">
+          Our unique set of characteristics that makes us stand out from the competitors
+        </p>
+
+        <div class="row g-4">
+
+          <div class="col-md-6 reveal-up delay-100">
+            <div class="unique-card">
+              <i class="bi bi-diagram-3"></i>
+              <h5>Unified Data Source</h5>
+              <p>Integrated data and intelligent pipelines deliver game-changing visibility.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal-up delay-200">
+            <div class="unique-card">
+              <i class="bi bi-sliders"></i>
+              <h5>Configurable Modules</h5>
+              <p>Adapt seamlessly to institutional rulebooks through configuration.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal-up delay-100">
+            <div class="unique-card">
+              <i class="bi bi-lightning-charge"></i>
+              <h5>Designed for Agility</h5>
+              <p>Empowering business owners with flexibility to adapt quickly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal-up delay-200">
+            <div class="unique-card">
+              <i class="bi bi-layers"></i>
+              <h5>Comprehensive Solution</h5>
+              <p>End-to-end digitization without fragmented legacy systems.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal-up delay-100">
+            <div class="unique-card">
+              <i class="bi bi-plug"></i>
+              <h5>Seamless Integration</h5>
+              <p>Effortless push-and-pull of data with existing applications.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal-up delay-200">
+            <div class="unique-card">
+              <i class="bi bi-headset"></i>
+              <h5>Dedicated Support</h5>
+              <p>Multi-channel expert support via phone, WhatsApp and email.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+   
+      <div class="col-lg-5 d-flex justify-content-center reveal-right delay-200">
+        <div class="unique-lottie-card reveal-zoom">
+          <lottie-player
+            src="Files/assets/Interface.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="unique-lottie">
+          </lottie-player>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="partner-slider reveal-up">
+  <div id="partnerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-inner">
+
+   
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6 reveal-left">
+              <h1 class="partner-title reveal-up">
+                Let SG Zyntexa Software Solutions be your partner in your digitization journey…
+              </h1>
+
+              <p class="partner-text reveal-up delay-100">
+                In a rapidly changing world, your business needs more than a technology vendor —
+                a partner who understands academic domains and is committed to your long-term success.
+                <br><br>
+                <strong>SG Zyntexa Software Solutions is a partner worth having!</strong>
+              </p>
+
+              <a href="request.html" class="btn partner-btn reveal-up delay-200">
+                Request a demo
+              </a>
+            </div>
+
+   
+            <div class="col-lg-6 text-center reveal-right delay-200">
+              <div class="partner-lottie-card reveal-zoom">
+                <lottie-player
+                  src="Files/assets/Business Analytics.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                  class="partner-lottie">
+                </lottie-player>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6 reveal-left">
+              <h1 class="partner-title reveal-up">Contact Us 🌐</h1>
+
+              <p class="partner-text reveal-up delay-100">
+                Every great journey begins with a conversation. At <strong>SG Zyntexa Software Solutions</strong>,
+                we believe in building bridges — whether it’s answering your questions,
+                supporting your vision, collaborating on partnerships, or welcoming new talent.
+              </p>
+
+              <p class="partner-text reveal-up delay-200">
+                At <strong>SG Zyntexa Software Solutions</strong>, every connection matters—whether it’s a general enquiry to learn more about our solutions,
+                a request for support to guide you through challenges, an opportunity for partnership to innovate together,
+                or an aspiration to join us through careers and grow with our mission.
+              </p>
+
+              <p class="partner-text reveal-up delay-300">
+                <strong>Reach out today</strong> and let’s shape the future side by side, because with <strong>SG Zyntexa Software Solutions</strong>,
+                your journey is always our priority.
+              </p>
+
+              <a href="contactus.html" class="btn partner-btn reveal-up delay-300">
+                Reach Out Today
+              </a>
+            </div>
+
+          
+            <div class="col-lg-6 text-center reveal-right delay-200">
+              <div class="partner-lottie-card reveal-zoom">
+                <lottie-player
+                  src="Files/assets/Customer Support.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                  class="partner-lottie">
+                </lottie-player>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="sg-footer pt-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Brand Section -->
+      <div class="col-lg-4">
+        <h3 class="sg-footer-brand fw-bold mb-3">  SG Zyntexa Software Solutions
+        </h3>
+
+        <p class="sg-footer-text mb-3">
+          SG Zyntexa Business Solutions empowers businesses worldwide with innovative consulting, technology, and outsourcing services that drive digital transformation. We help clients accelerate growth, optimize costs, and achieve operational excellence through agile execution and strategic innovation.
+        </p>
+
+        <a href="mailto:contact@sgsoftware.com" class="sg-footer-email">
+          <i class="bi bi-envelope-fill me-2"></i> contact@sgsoftware.com
+        </a>
+      </div>
+
+      <!-- Company Links -->
+      <div class="col-lg-2 col-md-4">
+        <h6 class="sg-footer-title mb-3">Company</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="aboutus.html" class="sg-footer-link">
+              <i class="bi bi-info-circle-fill me-2"></i> About Us
+            </a>
+          </li>
+          <li>
+            <a href="campus.html" class="sg-footer-link">
+              <i class="bi bi-gear-fill me-2"></i> Services
+            </a>
+          </li>
+          <li>
+            <a href="partners.html" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i> Partners
+            </a>
+          </li>
+          <li>
+             <a href="#" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i>hr@sgzyntexa.com
+            </a>
+        </a>
+            </a>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Resources</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="blog.html" class="sg-footer-link">
+              <i class="bi bi-journal-text me-2"></i> Blog
+            </a>
+          </li>
+          <li>
+            <a href="support.html" class="sg-footer-link">
+              <i class="bi bi-headset me-2"></i> Support
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" class="sg-footer-link">
+              <i class="bi bi-shield-lock-fill me-2"></i> Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" class="sg-footer-link">
+              <i class="bi bi-file-earmark-text-fill me-2"></i> Terms & Conditions
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch -->
+      <!-- Get in Touch + MAP -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Get in Touch</h6>
+
+        <p class="sg-footer-text mb-2">
+          <i class="bi bi-geo-alt-fill me-2"></i> Pune & Solapur, India
+        </p>
+
+        <!-- MAP -->
+        <div id="footer-map" style="height:220px; border-radius:10px;"></div>
+
+        <div class="d-flex gap-2 sg-footer-socials mt-3">
+          <a href="https://www.instagram.com/sgzyntexa.pvt.ltd/?utm_source=ig_web_button_share_sheet" class="sg-social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/sg-zyntexa-com/" class="sg-social-btn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="sg-footer-divider my-4">
+
+    <!-- Bottom -->
+    <div class="sg-footer-bottom text-center pb-4">
+      <p class="mb-0 small">
+        <i class="bi bi-c-circle me-1"></i> 2025 SG Zyntexa Software Solutions Pvt. Ltd. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  const pune = [18.5204, 73.8567];
+  const solapur = [17.6599, 75.9064];
+
+  const map = L.map('footer-map', {
+    scrollWheelZoom: false,
+    dragging: true
+  });
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker(pune).addTo(map).bindPopup("Pune Office");
+  L.marker(solapur).addTo(map).bindPopup("Solapur Office");
+
+  const bounds = L.latLngBounds([pune, solapur]);
+  map.fitBounds(bounds, { padding: [25, 25] });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="main.js"></script>
+
+</body>
+</html>

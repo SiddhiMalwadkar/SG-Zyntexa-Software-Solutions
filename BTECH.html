@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BTECH UnderGraduate Course|SG Zyntexa Software Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="BTECH.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <img src="Files/assets/logo/SG-Zyntexa-F-Logo.png" alt="SG Zyntexa Losgo" class="navbar-logo">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <!-- About Us Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="aboutus.html" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="aboutus.html">Our Story</a></li>
+          </ul>
+        </li>
+
+        <!-- Product Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="campus.html">SG Zyntexa Campus</a></li>
+            <li><a class="dropdown-item" href="offerings.html">Offerings</a></li>
+            <li><a class="dropdown-item" href="architectures.html">Architecture</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partner Institutions</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a class="btn demo-btn" href="request.html">Request a Demo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="btech-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <div class="badge-pill reveal">
+          <i class="bi bi-mortarboard-fill"></i>
+          Undergraduate • B.Tech
+        </div>
+
+        <h1 class="hero-title reveal">
+          B.Tech Program Management, Streamlined for Modern Engineering Campuses
+        </h1>
+
+        <p class="hero-subtitle reveal">
+          SG Zyntexa Software Solutions helps engineering institutes manage admissions, academics, labs,
+          attendance, assessments, internal evaluations, and placements—on one centralized platform.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn hero-btn-primary">
+            Request a Demo <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <a href="#modules" class="btn hero-btn-outline">
+            Explore Modules
+          </a>
+        </div>
+
+        <div class="hero-highlights reveal">
+          <div class="hero-highlight">
+            <i class="bi bi-calendar-week"></i>
+            Timetable & lab scheduling
+          </div>
+          <div class="hero-highlight">
+            <i class="bi bi-journal-check"></i>
+            Attendance & assessments
+          </div>
+          <div class="hero-highlight">
+            <i class="bi bi-briefcase"></i>
+            Placement readiness
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <div class="hero-img-wrap reveal">
+          <img
+            src="Files/assets/domains/Under-Graduate/BTECH/logo.jpg"
+            class="img-fluid hero-img"
+            alt="B.Tech Undergraduate Program"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ================= CHALLENGES ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <div class="col-lg-5 text-center reveal">
+        <img
+          src="Files/assets/domains/Under-Graduate/BTECH/challenges.png"
+          class="img-fluid soft-img"
+          alt="B.Tech program challenges"
+        />
+      </div>
+
+      <div class="col-lg-7">
+        <h2 class="section-title reveal">What Engineering Institutes Usually Struggle With</h2>
+        <p class="section-subtitle reveal">
+          B.Tech programs require coordination across departments, labs, faculties, internal evaluation,
+          and compliance reporting. SG Zyntexa Software Solutions simplifies daily academic operations into one workflow.
+        </p>
+
+        <div class="needs-grid">
+
+          <div class="need-card reveal">
+            <i class="bi bi-calendar2-x"></i>
+            <div>
+              <h6>Lab scheduling conflicts</h6>
+              <p>Multiple batches, labs & faculty slots overlap often.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-journal-check"></i>
+            <div>
+              <h6>Manual attendance workload</h6>
+              <p>Tracking theory + lab attendance becomes time-consuming.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-clipboard2-check"></i>
+            <div>
+              <h6>Internal assessments complexity</h6>
+              <p>Assignments, IA marks & rubrics need structured tracking.</p>
+            </div>
+          </div>
+
+          <div class="need-card reveal">
+            <i class="bi bi-shield-lock"></i>
+            <div>
+              <h6>Reporting & audit pressure</h6>
+              <p>NAAC / NBA style reporting takes time without automation.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODULES ================= -->
+<section id="modules" class="section-pad section-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title reveal">Smart Modules Built for B.Tech Academic Operations</h2>
+      <p class="section-subtitle center-subtitle reveal">
+        From admissions to assessments to placements—manage everything with complete visibility.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-person-vcard"></i></div>
+          <h6>Student Profile Management</h6>
+          <p>Admissions, batches, documents & academic history.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-calendar-week"></i></div>
+          <h6>Scheduling & Timetable</h6>
+          <p>Manage lectures, labs, faculty workload & room allocation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-journal-check"></i></div>
+          <h6>Attendance Tracking</h6>
+          <p>Track attendance across subjects and lab sessions.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <h6>Assignments & Submissions</h6>
+          <p>Collect assignments, projects, and practical files digitally.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-clipboard2-check"></i></div>
+          <h6>Internal Evaluation</h6>
+          <p>IA marks, rubrics, grading transparency & faculty review.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="cap-card reveal">
+          <div class="cap-icon"><i class="bi bi-briefcase"></i></div>
+          <h6>Placement Tracking</h6>
+          <p>Student readiness, recruiter drives & placement outcomes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPOTLIGHT ================= -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+        <h2 class="section-title reveal">From Labs to Placements — Full Visibility at Every Stage</h2>
+
+        <p class="section-subtitle reveal">
+          Engineering programs require strong academic discipline and output tracking.
+          SG Zyntexa Software Solutions provides structured monitoring of lab activity, academic performance, and career readiness.
+        </p>
+
+        <div class="lifecycle-list reveal">
+          <div class="life-step"><span><i class="bi bi-check2-circle"></i></span> Lab schedules, submissions, and practical progress</div>
+          <div class="life-step"><span><i class="bi bi-check2-circle"></i></span> Department-wise attendance and IA dashboards</div>
+          <div class="life-step"><span><i class="bi bi-check2-circle"></i></span> Student performance insights for mentors and HODs</div>
+          <div class="life-step"><span><i class="bi bi-check2-circle"></i></span> Placement reports and recruiter-ready outcomes</div>
+        </div>
+
+        <a href="contactus.html" class="btn hero-btn-primary mt-4 reveal">
+         Contact Us <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <div class="col-lg-6 text-center reveal">
+        <img
+          src="Files/assets/domains/Under-Graduate/BTECH/modules.png"
+          class="img-fluid soft-img"
+          alt="B.Tech modules overview"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="section-pad section-soft" id="btechStats">
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-box reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Centralized Academic Ops</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-box reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="55" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Reduced Manual Tracking</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-box reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="40" data-suffix="%">0</span>
+          </h2>
+          <p class="mb-0">Faster Internal Evaluations</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="stat-box reveal">
+          <h2 class="fw-bold mb-1">
+            <span class="stat-number" data-target="24" data-suffix=" Hours">0</span>
+          </h2>
+          <p class="mb-0">Reporting Readiness</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section id="contact" class="final-cta cta-gap-footer">
+  <div class="container text-center">
+    <h2 class="reveal">Ready to automate B.Tech program operations?</h2>
+    <p class="reveal">
+      See how SG Zyntexa Software Solutions helps engineering institutes simplify academics, labs, evaluations, and placements.
+    </p>
+
+    <div class="cta-actions reveal">
+      <a href="request.html" class="btn hero-btn-primary">Request a Demo</a>
+      <a href="campus.html" class="btn hero-btn-outline">View Other Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="sg-footer pt-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Brand Section -->
+      <div class="col-lg-4">
+        <h3 class="sg-footer-brand fw-bold mb-3">  SG Zyntexa Software Solutions
+        </h3>
+
+        <p class="sg-footer-text mb-3">
+          SG Zyntexa Business Solutions empowers businesses worldwide with innovative consulting, technology, and outsourcing services that drive digital transformation. We help clients accelerate growth, optimize costs, and achieve operational excellence through agile execution and strategic innovation.
+        </p>
+
+        <a href="mailto:contact@sgsoftware.com" class="sg-footer-email">
+          <i class="bi bi-envelope-fill me-2"></i> contact@sgsoftware.com
+        </a>
+      </div>
+
+      <!-- Company Links -->
+      <div class="col-lg-2 col-md-4">
+        <h6 class="sg-footer-title mb-3">Company</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="aboutus.html" class="sg-footer-link">
+              <i class="bi bi-info-circle-fill me-2"></i> About Us
+            </a>
+          </li>
+          <li>
+            <a href="campus.html" class="sg-footer-link">
+              <i class="bi bi-gear-fill me-2"></i> Services
+            </a>
+          </li>
+          <li>
+            <a href="partners.html" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i> Partners
+            </a>
+          </li>
+          <li>
+             <a href="#" class="sg-footer-link">
+              <i class="bi bi-people-fill me-2"></i>hr@sgzyntexa.com
+            </a>
+        </a>
+            </a>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Resources</h6>
+        <ul class="list-unstyled sg-footer-list">
+          <li>
+            <a href="blog.html" class="sg-footer-link">
+              <i class="bi bi-journal-text me-2"></i> Blog
+            </a>
+          </li>
+          <li>
+            <a href="support.html" class="sg-footer-link">
+              <i class="bi bi-headset me-2"></i> Support
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" class="sg-footer-link">
+              <i class="bi bi-shield-lock-fill me-2"></i> Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" class="sg-footer-link">
+              <i class="bi bi-file-earmark-text-fill me-2"></i> Terms & Conditions
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch -->
+      <!-- Get in Touch + MAP -->
+      <div class="col-lg-3 col-md-4">
+        <h6 class="sg-footer-title mb-3">Get in Touch</h6>
+
+        <p class="sg-footer-text mb-2">
+          <i class="bi bi-geo-alt-fill me-2"></i> Pune & Solapur, India
+        </p>
+
+        <!-- MAP -->
+        <div id="footer-map" style="height:220px; border-radius:10px;"></div>
+
+        <div class="d-flex gap-2 sg-footer-socials mt-3">
+          <a href="https://www.instagram.com/sgzyntexa.pvt.ltd?igsh=b2prcWN2ZmkwOGkz" class="sg-social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/yourprofile" class="sg-social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/company/sg-zyntexa-com/" class="sg-social-btn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="sg-footer-divider my-4">
+
+    <!-- Bottom -->
+    <div class="sg-footer-bottom text-center pb-4">
+      <p class="mb-0 small">
+        <i class="bi bi-c-circle me-1"></i> 2025 SG Zyntexa Software Solutions Pvt. Ltd. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  const pune = [18.5204, 73.8567];
+  const solapur = [17.6599, 75.9064];
+
+  const map = L.map('footer-map', {
+    scrollWheelZoom: false,
+    dragging: true
+  });
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker(pune).addTo(map).bindPopup("Pune Office");
+  L.marker(solapur).addTo(map).bindPopup("Solapur Office");
+
+  const bounds = L.latLngBounds([pune, solapur]);
+  map.fitBounds(bounds, { padding: [25, 25] });
+</script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="BTECH.js"></script>
+</body>
+</html>
