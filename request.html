@@ -68,95 +68,91 @@
   </div>
 </nav>
 
+<body>
 
-<!--  DEMO FORM SECTION -->
-<section class="demo-section">
-  <div class="bg-glow one"></div>
-  <div class="bg-glow two"></div>
+<section class="demo-wrapper">
+  <div class="demo-container">
 
-  <div class="container">
-    <div class="demo-card-wrap row g-0 align-items-stretch">
+    <!-- LEFT -->
+    <div class="demo-left">
+      <h1>Request a <span>Demo</span></h1>
+      <p class="subtitle">
+        Schedule a walkthrough of <b>SG Zyntexa Software Solutions</b>.
+      </p>
 
-      <!--  LEFT: FORM (Animation) -->
-      <div class="col-lg-7 left-side reveal-left">
-        <h2 class="demo-heading">Request a <span>Demo</span></h2>
-        <p class="demo-subtitle">
-          Schedule a walkthrough of <b>SG Zyntexa Software Solutions</b>. 
-        </p>
+      <form
+        action="https://formsubmit.co/malwadkarsiddhigirish@gmail.com"
+        method="POST">
 
-        <form id="demoForm" novalidate>
+        <input type="hidden" name="_subject" value="SG Zyntexa | Demo Request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
 
-          <div class="input-wrap">
-            <i class="bi bi-building input-icon"></i>
-            <input type="text" class="form-control" id="institution" placeholder="Institution Name" required>
-          </div>
-
-          <div class="input-wrap">
-            <i class="bi bi-person input-icon"></i>
-            <input type="text" class="form-control" id="name" placeholder="Contact Person Name" required>
-          </div>
-
-          <div class="input-wrap">
-            <i class="bi bi-envelope input-icon"></i>
-            <input type="email" class="form-control" id="email" placeholder="Official Email Address" required>
-          </div>
-
-          <div class="input-wrap">
-            <i class="bi bi-telephone input-icon"></i>
-            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
-          </div>
-
-          <div class="input-wrap">
-            <i class="bi bi-calendar2-check input-icon"></i>
-            <input type="datetime-local" class="form-control" id="time">
-          </div>
-
-          <!--  Requirement compulsory -->
-          <div class="input-wrap">
-            <i class="bi bi-chat-dots input-icon"></i>
-            <textarea class="form-control" id="message" rows="4"
-              placeholder="Your Requirement (Compulsory)" required></textarea>
-          </div>
-
-          <button type="submit" class="btn-demo" id="demoBtn">
-            <i class="bi bi-calendar2-event-fill me-2"></i> Request Demo
-          </button>
-
-          <!--  Visible only after submit success -->
-          <div class="success-box" id="demoSuccess">
-             Demo request submitted successfully! Our team will contact you shortly.
-          </div>
-
-        </form>
-      </div>
-
-      <!--  RIGHT: LOTTIE (Animation) -->
-      <div class="col-lg-5 right-side reveal-right delay-200">
-        <h4 class="right-title">Quick Demo. Real Solutions 🚀</h4>
-        <p class="right-desc">
-          Share your goals and we’ll show you how SG Zyntexa Software Solutions fits your institution.
-        </p>
-
-        <div class="lottie-box">
-          <lottie-player
-            src="Files/assets/clients/Business team.json"
-            background="transparent"
-            speed="1"
-            loop
-            autoplay
-            class="demo-lottie">
-          </lottie-player>
+        <div class="field">
+          <i class="bi bi-building"></i>
+          <input type="text" name="Institution Name" placeholder="Institution Name" required>
         </div>
 
-        <div class="reach-info mt-3">
-          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>  contact@sgsoftware.com</p>
-          <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i> +91 95616 38441</p>
+        <div class="field">
+          <i class="bi bi-person"></i>
+          <input type="text" name="Contact Person Name" placeholder="Contact Person Name" required>
         </div>
-      </div>
 
+        <div class="field">
+          <i class="bi bi-envelope"></i>
+          <input type="email" name="Email" placeholder="Official Email Address" required>
+        </div>
+
+        <div class="field">
+          <i class="bi bi-telephone"></i>
+          <input type="tel" name="Phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="field date">
+          <i class="bi bi-calendar"></i>
+          <input type="date" name="Preferred Date">
+        </div>
+
+        <div class="field textarea">
+          <i class="bi bi-chat-dots"></i>
+          <textarea name="Requirement" placeholder="Your Requirement (Compulsory)" required></textarea>
+        </div>
+
+        <button class="submit-btn">
+          <i class="bi bi-calendar-check"></i>
+          Request Demo
+        </button>
+
+      </form>
     </div>
+
+    <!-- RIGHT -->
+    <div class="demo-right">
+      <h3>Quick Demo. Real Solutions 🚀</h3>
+      <p>
+        Share your goals and we’ll show you how SG Zyntexa Software
+        Solutions fits your institution.
+      </p>
+
+      <div class="illustration-card">
+        <lottie-player
+          src="Files/assets/clients/Business team.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+
+      <div class="contact">
+        <p><i class="bi bi-envelope-fill"></i> contact@sgsoftware.com</p>
+        <p><i class="bi bi-telephone-fill"></i> +91 95616 38441</p>
+      </div>
+    </div>
+
   </div>
 </section>
+
 <section class="next-step-section">
   <div class="container text-center">
     <h2 class="next-step-title">Take the Next Step</h2>

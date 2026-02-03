@@ -79,7 +79,7 @@
   </div>
 </nav>
 
-<!--  CONTACT SECTION -->
+<!-- ================= CONTACT SECTION ================= -->
 <section class="contact-section">
   <div class="bg-glow one"></div>
   <div class="bg-glow two"></div>
@@ -87,53 +87,66 @@
   <div class="container">
     <div class="contact-card row g-0 align-items-stretch">
 
-      <!--  LEFT: FORM (Animation added) -->
+      <!-- LEFT FORM -->
       <div class="col-lg-7 left-side">
         <h2 class="contact-heading">Contact <span>SG Zyntexa Software Solutions</span></h2>
         <p class="contact-subtitle">
           Have a question, need support, or want a demo? Send us a message and we’ll respond quickly.
         </p>
+        <!--here we have to enter the gmail id-->
+        <form 
+          action="https://formsubmit.co/malwadkarsiddhigirish@gmail.com"
+          method="POST"
+          id="xyzContactForm"
+          novalidate>
 
-        <form id="xyzContactForm" novalidate>
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_subject" value="SG Zyntexa | Contact Us Enquiry">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
 
           <div class="input-wrap">
             <i class="bi bi-person input-icon"></i>
-            <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+            <input type="text" class="form-control" id="name" name="Name"
+                   placeholder="Full Name" required>
           </div>
 
           <div class="input-wrap">
             <i class="bi bi-envelope input-icon"></i>
-            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            <input type="email" class="form-control" id="email" name="Email"
+                   placeholder="Email Address" required>
           </div>
 
           <div class="input-wrap">
             <i class="bi bi-telephone input-icon"></i>
-            <input type="tel" class="form-control" id="phone" placeholder="Mobile Number" required>
+            <input type="tel" class="form-control" id="phone" name="Phone"
+                   placeholder="Mobile Number" required>
           </div>
 
           <div class="input-wrap">
             <i class="bi bi-building input-icon"></i>
-            <input type="text" class="form-control" id="institution" placeholder="Institution / Organization">
+            <input type="text" class="form-control" id="institution" name="Institution"
+                   placeholder="Institution / Organization">
           </div>
 
           <div class="input-wrap">
             <i class="bi bi-chat-dots input-icon textarea-icon"></i>
-            <textarea class="form-control" id="message" rows="4" placeholder="Write your message..." required></textarea>
+            <textarea class="form-control" id="message" name="Message"
+                      rows="4" placeholder="Write your message..." required></textarea>
           </div>
 
-          <button type="submit" class="btn-send" id="sendBtn">
+          <button type="submit" class="btn-send">
             <i class="bi bi-send-fill me-2"></i> Send Message
           </button>
 
-          <!--  SUCCESS only after submit -->
           <div class="success-box" id="successBox">
-             Message sent successfully! We will contact you soon.
+            Message sent successfully! We will contact you soon.
           </div>
 
         </form>
       </div>
 
-      <!--  RIGHT: LOTTIE PANEL (Animation added) -->
+      <!-- RIGHT PANEL -->
       <div class="col-lg-5 right-side reveal-right delay-200">
         <h4 class="right-title">Smart Support. Fast Replies. 🚀</h4>
         <p class="right-desc">
@@ -146,17 +159,15 @@
             background="transparent"
             speed="1"
             loop
-            autoplay
-            class="contact-lottie">
+            autoplay>
           </lottie-player>
         </div>
 
         <div class="contact-info mt-3">
-          <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i> Pune, Maharashtra</p>
-          <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i> contact@sgsoftware.com</p>
-          <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i> +91 95616 38441</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> Pune, Maharashtra</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> contact@sgsoftware.com</p>
+          <p><i class="bi bi-telephone-fill me-2"></i> +91 95616 38441</p>
         </div>
-
       </div>
 
     </div>
