@@ -978,3 +978,15 @@
 
 
 
+/* ===== FIX NAVBAR BULLET + SPACING GLOBALLY ===== */
+
+.navbar-nav {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: auto !important;  /* Keeps menu right aligned */
+}
+
+.navbar-nav .nav-item {
+  list-style: none !important;
+  margin-left: 20px;  /* Proper spacing between items */
+}

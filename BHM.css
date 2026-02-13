@@ -865,3 +865,7 @@
 
 
 
+.navbar .nav-link,
+.navbar-brand {
+  font-weight: 400 !important;   /* normal weight */
+}
