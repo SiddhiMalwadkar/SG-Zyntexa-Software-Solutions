@@ -185,21 +185,25 @@ button,
   color: #ffd700 !important;
 }
 
-/* Dropdown */
 .dropdown-menu {
-  background: rgba(0,0,0,0.85);
+  background: #ffffff; /* White background */
   border-radius: 10px;
-  border: none;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
 }
 
+/* Dropdown text */
 .dropdown-item {
-  color: #ffffff;
+  color: #333333; /* Dark text for readability */
+  font-weight: 500;
 }
 
+/* Hover */
 .dropdown-item:hover {
-  background: #00d4ff;
-  color: #000;
+  background: #f3f4f6; /* Light gray hover */
+  color: #000000;
 }
+
 
 /* CTA Button */
 .demo-btn {

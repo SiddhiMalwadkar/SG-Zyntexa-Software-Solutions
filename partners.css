@@ -958,7 +958,7 @@
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
-/*
+
 
 @media (max-width: 768px) {
 
@@ -1001,54 +1001,118 @@
     font-size: 1rem !important;
   }
 }
-/* ================= MOBILE NAVBAR ================= */
+/* ================= UPDATED COMPACT MOBILE NAVBAR ================= */
 
-
-/* ================= CLEAN MOBILE NAVBAR ================= */
 @media (max-width: 991px) {
 
+  /* 1. Reduce overall navbar height and padding */
   .navbar {
-    height: auto;
-    padding: 10px 16px;
+    height: auto;          /* Changed from 60px to auto for better fit */
+    min-height: 50px;      /* Ensures it doesn't collapse too much */
+    padding: 2px 15px;     /* Tightened top/bottom padding */
   }
 
-  /* Keep logo same size */
- 
-
-  .company-name {
-    display: none;
+  /* 2. Scale the logo down to fit the tighter space */
+  .navbar-logo {
+    height: 60px;          /* Reduced from 80px to move everything "up" */
+    width: auto;
+    margin-top: -5px;      /* Slight negative margin to pull it up if needed */
+    margin-bottom: -5px;
   }
 
+  /* 3. Adjust the toggler (hamburger icon) alignment */
+  .navbar-toggler {
+    padding: 2px 6px;
+    margin-top: 0;         /* Ensures it stays centered with the logo */
+  }
+
+  /* 4. Remove extra top margin from the dropdown */
   .navbar-collapse {
-    background: linear-gradient(180deg, #003d80, #002855);
+    background: linear-gradient(180deg,#003d80,#002855);
+    border-radius: 10px;
     padding: 15px;
-    border-radius: 0 0 15px 15px;
+    margin-top: 5px;       /* Reduced from 8px */
   }
 
-  .navbar-nav {
-    text-align: center;
-  }
-
-  .navbar-nav .nav-item {
-    margin: 8px 0;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-    padding: 8px 0;
-  }
-
-  .demo-btn {
-    width: 100%;
-    margin-top: 12px;
+  /* 5. Adjust the Story section top padding */
+  /* This prevents the text below from feeling too far from the header */
+  .section {
+    padding: 40px 0;       /* Reduced from 90px for mobile */
   }
 }
+.dropdown-menu {
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+}
+
+/* Dropdown text */
+.dropdown-item {
+  color: #333333; /* Dark text for readability */
+  font-weight: 500;
+}
+
+/* Hover */
+.dropdown-item:hover {
+  background: #f3f4f6; /* Light gray hover */
+  color: #000000;
+}
+
+
 @media (max-width: 991px) {
+
+  /* 1. Reduce overall navbar height and padding */
   .navbar {
-    height: 70px;
+    height: auto;
+    min-height: 50px;
+    padding: 2px 15px;
   }
 
+  /* 2. Scale the logo */
   .navbar-logo {
-    max-height: 80px;
+    height: 95px;
+    width: auto;
+    margin-top: -5px;
+    margin-bottom: -5px;
   }
+
+  /* 3. Dropdown styling */
+  .navbar-collapse {
+    background: linear-gradient(180deg,#003d80,#002855);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 5px;
+  }
+
+  /* 4. MOVE "OUR STORY" DOWN HERE */
+  /* We increase the top padding to create breathing room below the navbar */
+  .section {
+    padding-top: 80px;    /* Increased from 40px to move text down */
+    padding-bottom: 40px;
+  }
+
+  /* Specifically target the story heading if needed */
+  .story h1 {
+    margin-top: 20px;
+    font-size: 2.2rem;   /* Slightly smaller font for better mobile fit */
+  }
+}
+.dropdown-menu {
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+}
+
+/* Dropdown text */
+.dropdown-item {
+  color: #333333; /* Dark text for readability */
+  font-weight: 500;
+}
+
+/* Hover */
+.dropdown-item:hover {
+  background: #f3f4f6; /* Light gray hover */
+  color: #000000;
 }

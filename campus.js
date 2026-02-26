@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Streams supported for research-oriented institutions (PhD/MPhil enabled).",
       icon: "bi-mortarboard",
       items: [
-        { name: "Science", icon: "bi bi-flask-florence-fill", link: "science.html" },
+        { name: "Science", icon: "bi-clipboard2-pulse", link: "science.html" },
         { name: "Pharmacy", icon: "bi-capsule", link: "pharmacy.html" },
         { name: "Dental", icon: "bi-heart-pulse", link: "dental.html" },
         { name: "Physiotherapy", icon: "bi-activity", link: "physiotherapy.html" },
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Engineering (B.Tech)", icon: "bi-gear", link: "btech.html" },
         { name: "Commerce (B.Com)", icon: "bi-cash-coin", link: "bcom.html" },
         { name: "Arts (BA)", icon: "bi-book", link: "ba.html" },
-        { name: "Science (B.Sc)", icon: "bi-flask", link: "bsc.html" },
+        { name: "Science (B.Sc)", icon: "bi-clipboard2-pulse", link: "bsc.html" },
         { name: "Pharmacy (B.Pharm)", icon: "bi-capsule", link: "bpharm.html" },
         { name: "Dental (BDS)", icon: "bi-heart-pulse", link: "bds.html" },
         { name: "Physiotherapy (BPT)", icon: "bi-activity", link: "bpt.html" },
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Streams supported for junior college and school-level operations.",
       icon: "bi-backpack",
       items: [
-        { name: "Science", icon: "bi-flask", link: "JRScience.html" },
+        { name: "Science", icon: "bi-clipboard2-pulse", link: "JRScience.html" },
         { name: "Commerce", icon: "bi-cash-coin", link: "JRCommerce.html" },
         { name: "Arts", icon: "bi-book", link: "JRArts.html" }
       ]
