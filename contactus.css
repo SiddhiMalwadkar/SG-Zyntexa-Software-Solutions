@@ -66,12 +66,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Navbar height */
-.navbar {
-  height: 80px;                
-  padding-top: 0;
-  padding-bottom: 0;
-}
+
 
 /* Brand container */
 .navbar-brand {
@@ -84,10 +79,11 @@
 
 /* Logo image */
 .navbar-logo {
-  height: 210px;                 
+  height: 210px;          /* keep your big logo */
   width: auto;
   object-fit: contain;
-  flex-shrink: 0;
+  margin-top: -65px;      /* visually lift it */
+  margin-bottom: -65px;   /* prevent layout push */
 }
 
 /* Company name */
@@ -143,31 +139,7 @@
   transform: scale(1.05);
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 991px) {
 
-  .navbar {
-    height: auto;
-    padding: 10px 20px;
-  }
-
-  .navbar-logo {
-    height: 44px;
-  }
-
-  .company-name {
-    display: none;
-  }
-
-  .navbar-nav {
-    padding-top: 12px;
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px;
-  }
-}
 
 /* HERO */
 .science-hero{
@@ -980,9 +952,101 @@ body {
 .reveal-left {
   opacity: 1 !important;
 }
+
 .contact-section {
-  padding: 140px 0 80px;
+  padding: 20px 0 80px;
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 110px 15px 60px;
+  }
+}z
 .btn-send {
   display: block;
+}
+
+/* ================= PERFECT MOBILE NAVBAR ================= */
+
+@media (max-width: 991px) {
+
+  /* Compact navbar */
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+
+  /* Fix giant logo */
+  .navbar-logo {
+    height: 40px;
+    width: auto;
+    margin: 0;
+  }
+
+  /* Remove extra spacing */
+  .navbar-brand {
+    padding: 0;
+  }
+
+  /* Fix toggler */
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+
+  /* Dropdown menu style */
+  .navbar-collapse {
+    background: linear-gradient(180deg,#003d80,#002855);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  /* Center items */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  /* Demo button */
+  .demo-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+body {
+  padding-top: 80px;
+}
+/* ================= BIG MOBILE LOGO ================= */
+
+@media (max-width: 991px) {
+
+  /* Navbar height */
+  .navbar {
+    height: 80px;
+    padding: 5px 15px;
+  }
+
+  /* Big logo */
+  .navbar-logo {
+    height: 100px;   /* Big but clean */
+    width: auto;
+  }
+
+  /* Keep alignment perfect */
+  .navbar-brand {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Toggle button alignment */
+  .navbar-toggler {
+    padding: 6px 10px;
+  }
+
 }

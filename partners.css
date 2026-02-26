@@ -1,3 +1,7 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+}
  /* Brand name */
 .navbar-brand {
   font-size: 1.55rem;   
@@ -136,30 +140,7 @@
 }
 
 
-@media (max-width: 991px) {
 
-  .navbar {
-    height: auto;
-    padding: 10px 20px;
-  }
-
-  .navbar-logo {
-    height: 44px;
-  }
-
-  .company-name {
-    display: none;
-  }
-
-  .navbar-nav {
-    padding-top: 12px;
-    text-align: center;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px;
-  }
-}
 
 
 .clientele-section {
@@ -503,38 +484,7 @@
   filter: invert(35%);
 }
 
-/* ---------- Mobile Responsiveness ---------- */
-@media (max-width: 991px) {
 
-  .partner-slider {
-    padding: 60px 0;
-  }
-
-  .partner-title {
-    font-size: 2.1rem;
-    text-align: center;
-  }
-
-  .partner-text {
-    text-align: center;
-    margin: 0 auto 26px;
-    font-size: 1rem;
-  }
-
-  .contact-points {
-    max-width: 520px;
-    margin: 0 auto 30px;
-  }
-
-  .partner-btn {
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-  .partner-image {
-    margin-top: 40px;
-  }
-}
 
 /* ---------- Small Screens ---------- */
 @media (max-width: 575px) {
@@ -1008,7 +958,7 @@
 .delay-300 { transition-delay: 0.3s; }
 .delay-400 { transition-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; }
-
+/*
 
 @media (max-width: 768px) {
 
@@ -1032,11 +982,6 @@
     align-items: center !important;
   }
 
-  .navbar-logo {
-    height: 42px !important;
-    max-height: 42px !important;
-  }
-
   .company-name {
     display: none !important;
   }
@@ -1054,5 +999,56 @@
   .navbar-nav .nav-link {
     padding: 10px 0 !important;
     font-size: 1rem !important;
+  }
+}
+/* ================= MOBILE NAVBAR ================= */
+
+
+/* ================= CLEAN MOBILE NAVBAR ================= */
+@media (max-width: 991px) {
+
+  .navbar {
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  /* Keep logo same size */
+ 
+
+  .company-name {
+    display: none;
+  }
+
+  .navbar-collapse {
+    background: linear-gradient(180deg, #003d80, #002855);
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .demo-btn {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-logo {
+    max-height: 80px;
   }
 }

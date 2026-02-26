@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-  background: linear-gradient(120deg, var(--light), #ffffff);
-  padding-top: 85px; /*  prevents navbar overlap */
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #eef3fb, #ffffff);
 }
 
 
@@ -75,8 +75,7 @@ body {
 /* Navbar height */
 .navbar {
   height: 80px;                
-  padding-top: 0;
-  padding-bottom: 0;
+  
 }
 
 /* Brand container */
@@ -178,11 +177,7 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(120deg, #eef3fb, #ffffff);
-}
+
 
 .demo-wrapper {
   padding: 100px 0;
@@ -743,4 +738,91 @@ lottie-player {
     border-radius: 10px;
   }
 }
+/* ================= PERFECT MOBILE NAVBAR ================= */
+
+@media (max-width: 991px) {
+
+  /* Make navbar compact */
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+
+  /* Fix big logo problem */
+  .navbar-logo {
+    height: 40px; 
+    width: auto;
+    margin: 0;
+  }
+
+  /* Remove logo stretching */
+  .navbar-brand {
+    padding: 0;
+  }
+
+  /* Remove extra spacing */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Fix toggler alignment */
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+
+  /* Collapse menu styling */
+  .navbar-collapse {
+    background: linear-gradient(180deg,#003d80,#002855);
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  /* Center menu */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* Demo button */
+  .demo-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+/* ================= BIG MOBILE LOGO ================= */
+
+@media (max-width: 991px) {
+
+  /* Navbar height */
+  .navbar {
+    height: 80px;
+    padding: 5px 15px;
+  }
+
+  /* Big logo */
+  .navbar-logo {
+    height: 100px;   /* Big but clean */
+    width: auto;
+  }
+
+  /* Keep alignment perfect */
+  .navbar-brand {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Toggle button alignment */
+  .navbar-toggler {
+    padding: 6px 10px;
+  }
+
+}
+
+
+
+
 

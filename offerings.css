@@ -1141,3 +1141,106 @@ body{
     height: 180px;
   }
 }
+/* ===== FINAL MOBILE NAVBAR FIX ===== */
+
+@media (max-width: 991px){
+
+  /* Navbar compact */
+  .navbar{
+    height:60px;
+    padding:5px 15px;
+  }
+
+  /* Perfect logo size */
+  .navbar-logo{
+    height:40px !important;
+    width:auto;
+    margin:0;
+  }
+
+  /* Remove extra spacing */
+  .navbar-brand{
+    padding:0;
+  }
+
+  /* Toggle button */
+  .navbar-toggler{
+    padding:4px 8px;
+    font-size:18px;
+  }
+
+  /* Dropdown menu box */
+  .navbar-collapse{
+    background:linear-gradient(180deg,#003d80,#002855);
+    border-radius:10px;
+    padding:15px;
+    margin-top:8px;
+  }
+
+  /* Center menu */
+  .navbar-nav{
+    text-align:center;
+  }
+
+  .navbar-nav .nav-item{
+    margin:6px 0;
+  }
+
+  /* Demo button full width */
+  .demo-btn{
+    width:100%;
+    margin-top:10px;
+  }
+
+}
+/* ===== MOBILE LOGO SIZE FIX ===== */
+
+@media (max-width: 991px){
+
+  .navbar{
+    height:70px;
+    padding:5px 15px;
+  }
+
+  /* Bigger clean logo */
+  .navbar-logo{
+    height:90px !important;
+    width:auto;
+    margin:0;
+  }
+
+  .navbar-brand{
+    padding:0;
+  }
+
+  .navbar-toggler{
+    padding:4px 8px;
+  }
+
+}
+/* MOBILE SAFETY - always show content */
+@media (max-width: 768px){
+
+  .reveal-up,
+  .reveal-left,
+  .reveal-right,
+  .reveal-zoom{
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+}
+
+
+/* PERFECT MOBILE OFFERINGS FIX */
+@media (max-width:768px){
+
+  .off-card{
+    margin-bottom:20px;
+  }
+
+  .offerings-section{
+    padding:50px 10px;
+  }
+
+}

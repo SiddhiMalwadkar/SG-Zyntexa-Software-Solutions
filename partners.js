@@ -5,17 +5,23 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   const revealObserver = new IntersectionObserver(
-    (entries) => {
+    (entries, observer) => {
       entries.forEach((entry) => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
           entry.target.classList.add("show");
-          revealObserver.unobserve(entry.target);
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.15, rootMargin: "0px 0px -80px 0px" }
+    { threshold: 0.15 }
   );
 
   revealElements.forEach(el => revealObserver.observe(el));
 
+});
+
+
+// 🔥 Force proper layout recalculation on load
+window.addEventListener("load", () => {
+  window.dispatchEvent(new Event("resize"));
 });

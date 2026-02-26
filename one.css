@@ -990,3 +990,68 @@
   list-style: none !important;
   margin-left: 20px;  /* Proper spacing between items */
 }
+/* ================= PERFECT MOBILE NAVBAR ================= */
+
+@media (max-width: 991px) {
+
+  /* Compact navbar */
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+
+  /* Fix large logo */
+  .navbar-logo {
+    height: 80px;
+    width: auto;
+    margin: 0;
+  }
+
+  /* Remove extra spacing */
+  .navbar-brand {
+    padding: 0;
+  }
+
+  /* Toggler fix */
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+
+  /* Mobile dropdown */
+  .navbar-collapse {
+    background: linear-gradient(180deg,#003d80,#002855);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  /* Center items */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  /* Demo button full width */
+  .demo-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+/* ===== FIX HERO HIDDEN BEHIND NAVBAR (MOBILE) ===== */
+
+@media (max-width: 991px){
+
+  body{
+    padding-top: 70px; /* space for navbar */
+  }
+
+  .arch-hero{
+    padding-top: 40px;
+  }
+
+}

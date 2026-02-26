@@ -869,3 +869,55 @@
 .navbar-brand {
   font-weight: 400 !important;   /* normal weight */
 }
+/* ================= PERFECT MOBILE NAVBAR ================= */
+
+@media (max-width: 991px) {
+
+  /* Compact navbar */
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+
+  /* Fix big logo */
+  .navbar-logo {
+    height: 80px;
+    width: auto;
+    margin: 0;
+  }
+
+  /* Remove spacing issues */
+  .navbar-brand {
+    padding: 0;
+  }
+
+  /* Toggler */
+  .navbar-toggler {
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+
+  /* Dropdown menu */
+  .navbar-collapse {
+    background: linear-gradient(180deg,#003d80,#002855);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 8px;
+  }
+
+  /* Center menu */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 6px 0;
+  }
+
+  /* Demo button */
+  .demo-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
